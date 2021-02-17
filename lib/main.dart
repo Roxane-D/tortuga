@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
               onPressed: null,
             )
           ],
-          backgroundColor: Colors.black54,
+          backgroundColor: Colors.black,
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -77,13 +77,17 @@ Widget titleSection = Container(
             'Les paradis des flibustiers',
             //style: TextStyle(fontSize: 25, fontWeight: FontWeight.w800, fontFamily: 'JimNightshade'),
             style: GoogleFonts.tangerine(
-                fontSize: 35, fontWeight: FontWeight.w800),
+                fontSize: 35,
+                fontWeight: FontWeight.w800,
+                color: Colors.black54),
           ),
           Text(
             'Réservez votre escale',
             //style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
             style: GoogleFonts.quicksand(
-                fontSize: 14, fontWeight: FontWeight.w500),
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                color: Colors.black54),
           )
         ],
       )
@@ -113,14 +117,14 @@ Widget iconSection = Container(
           children: [
             Icon(
               Icons.festival,
-              color: Colors.black54,
+              size: 30,
             ),
             SizedBox(height: 5),
             Text(
               'Tavernes'.toUpperCase(),
               style: TextStyle(
                   fontFamily: 'JimNightshade',
-                  color: Colors.black54,
+                  fontSize: 16,
                   fontWeight: FontWeight.w800),
             ),
           ],
@@ -132,13 +136,13 @@ Widget iconSection = Container(
           children: [
             Icon(
               Icons.anchor,
-              color: Colors.black54,
+              size: 30,
             ),
             SizedBox(height: 5),
             Text('Bateaux'.toUpperCase(),
                 style: TextStyle(
                     fontFamily: 'JimNightshade',
-                    color: Colors.black54,
+                    fontSize: 16,
                     fontWeight: FontWeight.w800)),
           ],
         ),
@@ -149,13 +153,13 @@ Widget iconSection = Container(
           children: [
             Icon(
               Icons.sports_bar,
-              color: Colors.black54,
+              size: 30,
             ),
             SizedBox(height: 5),
             Text('Cervoise'.toUpperCase(),
                 style: TextStyle(
                     fontFamily: 'JimNightshade',
-                    color: Colors.black54,
+                    fontSize: 16,
                     fontWeight: FontWeight.w800)),
           ],
         ),
