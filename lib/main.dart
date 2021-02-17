@@ -24,7 +24,10 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: Text(
             "Tortuga Island",
-            style: TextStyle(fontFamily: 'Tangerine'),
+            style: GoogleFonts.jimNightshade(
+              fontSize: 35,
+              fontWeight: FontWeight.w800,
+            ),
           ),
           actions: [
             IconButton(
@@ -72,11 +75,15 @@ Widget titleSection = Container(
         children: [
           Text(
             'Les paradis des flibustiers',
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.w800, fontFamily: 'Tangerine'),
+            //style: TextStyle(fontSize: 25, fontWeight: FontWeight.w800, fontFamily: 'JimNightshade'),
+            style: GoogleFonts.tangerine(
+                fontSize: 35, fontWeight: FontWeight.w800),
           ),
           Text(
             'Réservez votre escale',
-            style: TextStyle(fontSize: 17, fontWeight: FontWeight.w500),
+            //style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+            style: GoogleFonts.quicksand(
+                fontSize: 14, fontWeight: FontWeight.w500),
           )
         ],
       )
@@ -90,6 +97,8 @@ Widget textSection = Container(
     '''Nommée du fait de sa forme Tortuga de mar (« Tortue de mer ») par Christophe Colomb, cette île des Antilles était un bastion pour les flibustiers et boucaniers qui écumaient les Caraïbes au XVIIe siècle et a été le premier territoire de Saint-Domingue colonisé par la France. 
   ''',
     softWrap: true,
+    style: GoogleFonts.lato(),
+    textAlign: TextAlign.justify,
   ),
 );
 
@@ -109,7 +118,10 @@ Widget iconSection = Container(
             SizedBox(height: 5),
             Text(
               'Tavernes'.toUpperCase(),
-              style: TextStyle(color: Colors.black54),
+              style: TextStyle(
+                  fontFamily: 'JimNightshade',
+                  color: Colors.black54,
+                  fontWeight: FontWeight.w800),
             ),
           ],
         ),
@@ -123,10 +135,11 @@ Widget iconSection = Container(
               color: Colors.black54,
             ),
             SizedBox(height: 5),
-            Text(
-              'Bateaux'.toUpperCase(),
-              style: TextStyle(color: Colors.black54),
-            ),
+            Text('Bateaux'.toUpperCase(),
+                style: TextStyle(
+                    fontFamily: 'JimNightshade',
+                    color: Colors.black54,
+                    fontWeight: FontWeight.w800)),
           ],
         ),
       ),
@@ -139,10 +152,11 @@ Widget iconSection = Container(
               color: Colors.black54,
             ),
             SizedBox(height: 5),
-            Text(
-              'Cervoise'.toUpperCase(),
-              style: TextStyle(color: Colors.black54),
-            ),
+            Text('Cervoise'.toUpperCase(),
+                style: TextStyle(
+                    fontFamily: 'JimNightshade',
+                    color: Colors.black54,
+                    fontWeight: FontWeight.w800)),
           ],
         ),
       ),
@@ -175,11 +189,11 @@ Widget tavernSection = Container(
 
 Widget buttonSection = RaisedButton(
   onPressed: () {},
-  shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(30)
-  ),
+  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
   color: Colors.black54,
   textColor: Colors.white,
   padding: EdgeInsets.fromLTRB(40, 10, 40, 10),
-  child: Text('Découvrir l\'île', style: TextStyle(fontSize: 20),),
+  child: Text('Découvrir l\'île',
+      //style: TextStyle(fontSize: 20),
+      style: GoogleFonts.quicksand(fontSize: 14, fontWeight: FontWeight.w500)),
 );

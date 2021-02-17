@@ -65,6 +65,10 @@ flutter:
       fonts:
         - asset: fonts/Tangerine-Regular.ttf
         - asset: fonts/Tangerine-Bold.ttf
+
+    - family: JimNightshade
+      fonts:
+        - asset: fonts/JimNightshade-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
